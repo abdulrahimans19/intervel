@@ -1,5 +1,5 @@
-import NoteModel from "../model/NoteMOdel.js";
 import jwt from "jsonwebtoken";
+import NoteModel from "../model/NoteMOdel.js";
 
 export const getAllNotes = async (req, res) => {
   let token = req.headers.authorization;
@@ -16,7 +16,7 @@ export const getAllNotes = async (req, res) => {
         message: error.message,
         status: 0,
       });
-    }
+    } 
   });
 };
 
